@@ -1,0 +1,102 @@
+:root {
+  --primary-color-rgb: 19, 0, 42;
+  --primary-light-rgb: 167, 137, 205;
+  --secondary-color-rgb: 19, 72, 134;
+  --main-font: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 20px;
+}
+
+header {
+  height: 21.5%;
+  background: repeating-linear-gradient(
+      rgba(255, 255, 255, 0.5) -1%,
+      rgba(var(--primary-light-rgb), 0.1)
+    ),
+    linear-gradient(
+      135deg,
+      rgba(var(--primary-light-rgb), 0.8) 10%,
+      rgba(255, 255, 255, 0.9) 42%,
+      rgba(255, 255, 255, 0.1) 43%,
+      rgba(var(--secondary-color-rgb), 0.7) 60%,
+      rgba(var(--primary-light-rgb), 0.7) 67%,
+      rgba(255, 255, 255, 0.1) 88%,
+      rgba(var(--primary-color-rgb), 0.8)
+    ),
+    linear-gradient(
+      12deg,
+      rgba(var(--primary-light-rgb), 0.8) 3%,
+      rgba(255, 255, 255, 0.9) 26%,
+      rgba(255, 255, 255, 0.1) 27%,
+      rgba(var(--secondary-color-rgb), 0.7) 42%,
+      rgba(var(--primary-light-rgb), 0.7) 46%,
+      rgba(255, 255, 255, 0.1) 75%,
+      rgba(var(--primary-color-rgb), 0.8)
+    );
+}
+h1 {
+  /* font-family: disney; */
+  font-family: var(--fancy-font);
+  font-size: 3em;
+  color: rgb(var(--primary-color-rgb));
+}
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+div.page {
+  height: 100vh;
+  background: rgba(var(--primary-light-rgb), 0.02);
+}
+form.form-style {
+  margin-top: 50px;
+}
+
+form.form-style input {
+  max-width: 60%;
+  margin-right: 20px;
+}
+
+form.form-style button {
+  background-color: rgba(var(--primary-light-rgb), 0.9);
+}
+
+form.form-style button:hover {
+  color: rgba(225, 225, 225, 0.9);
+  background: linear-gradient(
+    112.1deg,
+    rgb(var(--primary-color-rgb)) 11.4%,
+    rgb(var(--primary-light-rgb))
+  );
+}
+
+#api-result h2 {
+  margin: 10px 0 60px;
+  font-size: 100px;
+  text-align: center;
+  color: rgba(var(--secondary-color-rgb));
+}
+#api-result strong {
+  font-size: larger;
+}
+
+#api-result img {
+  box-shadow: 3px 2px 10px rgb(var(--primary-light-rgb));
+}
+
+#api-result ul {
+  list-style: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.fancy-font {
+  font-family: "Inspiration", cursive;
+}
