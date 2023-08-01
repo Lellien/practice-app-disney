@@ -37,7 +37,7 @@ function showCharacter(character) {
   </ul>
 <p>${
     character.name
-  } can be found in real life at Disney park attractions indluding <ul> ${listParkAttractions(
+  } can be found in real life at Disney park attractions including <ul> ${listParkAttractions(
     character.parkAttractions
   )}</ul></p>
 <p> To read more about ${character.name}, head over <a href=${
@@ -45,7 +45,7 @@ function showCharacter(character) {
   } target=_blank> here</a>, a page with tons of information </p>
   </div>
   <div class="col-md-6">
-  <img class="rounded image-fluid" src="${character.image}" alt="Image of ${
+  <img class="rounded" src="${character.image}" alt="Image of ${
     character.name
   }"></img>
   </div>
