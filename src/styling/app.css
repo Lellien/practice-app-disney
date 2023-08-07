@@ -64,7 +64,6 @@ form {
 
 .form-style button {
   background-color: rgba(var(--primary-light-rgb), 0.9);
-  max-width: 60%;
 }
 
 .form-style button:hover {
@@ -76,9 +75,10 @@ form {
   );
 }
 
-/* In JS intected section #api-result */
+/* In JS injected section #api-result */
 h2 {
-  margin: 10px 0 60px;
+  margin: 0;
+  padding: 30px 0;
   font-size: 100px;
   text-align: center;
   color: rgba(var(--secondary-color-rgb));
@@ -122,10 +122,17 @@ ul {
     margin-bottom: 10px;
     text-align: center;
   }
+
   h2 {
     font-size: 80px;
+    padding: 30px 0 20px;
+  }
+
+  img {
+    margin-bottom: 30px;
   }
 }
+
 @media (max-width: 576px) {
   body {
     font-size: 16px;
@@ -134,5 +141,15 @@ ul {
 
   h1 {
     font-size: 2.2em;
+  }
+  .form-style input {
+    max-width: 90%;
+  }
+  .form-style input::placeholder,
+  .form-style button {
+    font-size: 14px;
+  }
+  .row {
+    padding: 0 18px;
   }
 }

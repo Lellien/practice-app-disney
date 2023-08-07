@@ -21,8 +21,13 @@ function listMovies(movieList) {
 function showCharacter(character) {
   let result = document.querySelector("#api-result");
   let display = ` 
-  <div class="row mt-4">
+  <div class="row">
   <h2 class="fancy-font" >${character.name}</h2>
+  <div class="d-block d-md-none col-md-6">
+  <img class="rounded" src="${character.image}" alt="Image of ${
+    character.name
+  }"></img>
+  </div>
   <div class="col-md-6">
   <p><strong>${character.name}</strong> is
   ${
@@ -44,7 +49,7 @@ function showCharacter(character) {
     character.info
   } target=_blank> here</a>, a page with tons of information </p>
   </div>
-  <div class="col-md-6">
+  <div class="d-none d-md-block col-md-6">
   <img class="rounded" src="${character.image}" alt="Image of ${
     character.name
   }"></img>
